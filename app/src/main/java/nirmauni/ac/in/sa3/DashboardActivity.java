@@ -31,7 +31,8 @@ public class DashboardActivity extends ActionBarActivity
 
         mToolbar = (Toolbar)findViewById(R.id.toolbar);
         if (mToolbar != null) {
-            mToolbar.setTitle("Navigation Drawer");
+            mToolbar.setTitle("Dashboard");
+            mToolbar.setBackgroundColor(getResources().getColor(R.color.ColorPrimary));
             setSupportActionBar(mToolbar);
         }
 
@@ -52,6 +53,10 @@ public class DashboardActivity extends ActionBarActivity
         switch (position){
             case 1:
                 intent = new Intent(DashboardActivity.this, AttendanceActivity.class);
+                startActivity(intent);
+                break;
+            case 2:
+                intent = new Intent(DashboardActivity.this, TimetableActivity.class);
                 startActivity(intent);
                 break;
             case 3:

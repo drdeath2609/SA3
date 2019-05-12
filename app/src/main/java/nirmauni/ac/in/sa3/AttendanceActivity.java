@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
@@ -24,12 +25,14 @@ public class AttendanceActivity extends ActionBarActivity
      */
     private NavigationDrawerFragment mNavigationDrawerFragment;
 
-    /**
-     * Used to store the last screen title. For use in {@link #restoreActionBar()}.
-     */
     private CharSequence mTitle;
     public int mCurrentActivityPosition = 1; //To Sync Navigation Drawer between different Activities
     private Toolbar mToolbar;
+    ViewPager pager;
+    ViewPagerAdapter adapter;
+    SlidingTabLayout tabs;
+    CharSequence Titles[]={"Summary","Lectures","Labs","Tutorials"};
+    int Numboftabs =4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,11 +41,33 @@ public class AttendanceActivity extends ActionBarActivity
 
         mToolbar = (Toolbar)findViewById(R.id.toolbar);
         if (mToolbar != null) {
-            mToolbar.setTitle("Navigation Drawer");
+            mToolbar.setTitle("Attendance");
+            mToolbar.setBackgroundColor(getResources().getColor(R.color.ColorPrimary));
             setSupportActionBar(mToolbar);
         }
 
-        Toast.makeText(getApplicationContext(),"Yo Attendance !",Toast.LENGTH_SHORT).show();
+        // Creating The ViewPagerAdapter and Passing Fragment Manager, Titles fot the Tabs and Number Of Tabs.
+        adapter =  new ViewPagerAdapter(getSupportFragmentManager(),Titles,Numboftabs);
+
+        // Assigning ViewPager View and setting the adapter
+        pager = (ViewPager) findViewById(R.id.pager);
+        pager.setAdapter(adapter);
+        pager.setOffscreenPageLimit(0);
+
+        // Assiging the Sliding Tab Layout View
+        tabs = (SlidingTabLayout) findViewById(R.id.tabs);
+        tabs.setDistributeEvenly(false); // To make the Tabs Fixed set this true, This makes the tabs Space Evenly in Available width
+
+        // Setting Custom Color for the Scroll bar indicator of the Tab View
+        tabs.setCustomTabColorizer(new SlidingTabLayout.TabColorizer() {
+            @Override
+            public int getIndicatorColor(int position) {
+                return getResources().getColor(R.color.tabsScrollColor);
+            }
+        });
+
+        // Setting the ViewPager For the SlidingTabsLayout
+        tabs.setViewPager(pager);
 
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getSupportFragmentManager().findFragmentById(R.id.navigation_drawer);
@@ -60,15 +85,16 @@ public class AttendanceActivity extends ActionBarActivity
         Intent intent;
         switch (position){
             case 0:
-                intent = new Intent(AttendanceActivity.this, DashboardActivity.class);
-                startActivity(intent);
+                finish();
                 break;
             case 2:
                 intent = new Intent(AttendanceActivity.this, TimetableActivity.class);
+                finish();
                 startActivity(intent);
                 break;
             case 3:
                 intent = new Intent(AttendanceActivity.this, ResultActivity.class);
+                finish();
                 startActivity(intent);
                 break;
         }

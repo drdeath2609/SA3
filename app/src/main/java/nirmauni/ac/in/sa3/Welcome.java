@@ -27,7 +27,7 @@ public class Welcome extends Fragment {
     private ViewPager mViewPager;
     private View view;
     private FragmentActivity myContext;
-
+    private com.viewpagerindicator.CirclePageIndicator mIndicator;
     @Override
     public View onCreateView(LayoutInflater inflater,
                              @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -35,7 +35,16 @@ public class Welcome extends Fragment {
         view = inflater.inflate(R.layout.fragment_welcome, container, false);
         mSectionsPagerAdapter = new SectionsPagerAdapter(myContext.getSupportFragmentManager());
         mViewPager = (ViewPager) view.findViewById(R.id.pager);
+        mViewPager.setBackgroundColor(getResources().getColor(R.color.md_orange_700));
         mViewPager.setAdapter(mSectionsPagerAdapter);
+
+        mIndicator = (com.viewpagerindicator.CirclePageIndicator)view.findViewById(R.id.circlePageIndicator);
+        mIndicator.setRadius(5*getResources().getDisplayMetrics().density);
+        mIndicator.setStrokeColor(getResources().getColor(R.color.md_orange_900));
+        mIndicator.setStrokeWidth(0);
+        mIndicator.setViewPager(mViewPager);
+        mIndicator.setPageColor(getResources().getColor((R.color.md_orange_900)));
+        mIndicator.setSnap(true);
         return view;
     }
 
@@ -45,7 +54,7 @@ public class Welcome extends Fragment {
         super.onAttach(activity);
     }
 
-    public class SectionsPagerAdapter extends FragmentPagerAdapter {
+    public class SectionsPagerAdapter extends FragmentPagerAdapter{
 
         public SectionsPagerAdapter(FragmentManager fm) {
             super(fm);

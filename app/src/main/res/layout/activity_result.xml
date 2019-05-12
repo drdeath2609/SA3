@@ -14,8 +14,29 @@
 
         <!-- As the main content view, the view below consumes the entire
              space available using match_parent in both dimensions. -->
-        <FrameLayout android:id="@+id/container" android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+        <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id = "@+id/chart"
+                android:layout_width="match_parent"
+                android:layout_height="250dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/cardList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="3dp"/>
+
+        </LinearLayout>
+
 
         <!-- android:layout_gravity="start" tells DrawerLayout to treat
              this as a sliding drawer on the left side for left-to-right

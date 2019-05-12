@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SA3.iml" filepath="$PROJECT_DIR$/SA3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SA3 - 20th June (priyesh).iml" filepath="$PROJECT_DIR$/SA3 - 20th June (priyesh).iml" />
+      <module fileurl="file://$PROJECT_DIR$/ViewPagerIndicator/ViewPagerIndicator.iml" filepath="$PROJECT_DIR$/ViewPagerIndicator/ViewPagerIndicator.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

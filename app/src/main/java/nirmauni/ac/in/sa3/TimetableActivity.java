@@ -35,6 +35,7 @@ public class TimetableActivity extends ActionBarActivity
     private CharSequence mTitle;
     private int mCurrentActivityPosition = 2; //To Sync Navigation Drawer between different Activities
     private Toolbar mToolbar;
+    private com.rey.material.widget.SnackBar mSnackbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,9 +44,14 @@ public class TimetableActivity extends ActionBarActivity
 
         mToolbar = (Toolbar)findViewById(R.id.toolbar);
         if (mToolbar != null) {
-            mToolbar.setTitle("Navigation Drawer");
+            mToolbar.setTitle("Timetable");
+            mToolbar.setBackgroundColor(getResources().getColor(R.color.ColorPrimary));
             setSupportActionBar(mToolbar);
         }
+
+        mSnackbar = (com.rey.material.widget.SnackBar)findViewById(R.id.snackbarTimeTable);
+        mSnackbar.make(TimetableActivity.this).text("Timetable..!! Comming Soon")
+                .singleLine(true).duration(3000).show();
 
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getSupportFragmentManager().findFragmentById(R.id.navigation_drawer);
@@ -63,15 +69,16 @@ public class TimetableActivity extends ActionBarActivity
         Intent intent;
         switch (position){
             case 0:
-                intent = new Intent(TimetableActivity.this, DashboardActivity.class);
-                startActivity(intent);
+                finish();
                 break;
             case 1:
                 intent = new Intent(TimetableActivity.this, AttendanceActivity.class);
+                finish();
                 startActivity(intent);
                 break;
             case 3:
                 intent = new Intent(TimetableActivity.this, ResultActivity.class);
+                finish();
                 startActivity(intent);
                 break;
         }

@@ -10,7 +10,7 @@
     <string name="title_activity_user">User</string>
 
     <!--User-->
-    <string name="username">#######@nirmauni.ac.in</string>
+    <string name="username">Roll Number</string>
     <string name="password">Password</string>
     <string name="title_activity_base">BaseActivity</string>
     <string name="title_activity_main">MainActivity</string>
@@ -32,4 +32,17 @@
     <string name="title_section1">Section 1</string>
     <string name="title_section2">Section 2</string>
     <string name="title_section3">Section 3</string>
+
+    <!--Result Starts-->
+
+    <string name="sub_name">Subject</string>
+    <string name="sub_code">Code</string>
+    <string name="sub_credit">Credits</string>
+    <string name="sub_grade">Grades</string>
+    <string name="sub_color">Legends</string>
+
+    <string name="spi">SPI : </string>
+    <string name="ppi">PPI : </string>
+
+    <!--Result Over-->
 </resources>

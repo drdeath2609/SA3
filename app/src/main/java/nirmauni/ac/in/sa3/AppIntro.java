@@ -1,9 +1,13 @@
 package nirmauni.ac.in.sa3;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 
 
 /**
@@ -26,10 +30,15 @@ public class AppIntro extends android.support.v4.app.Fragment {
 
     public AppIntro() {
     }
+    private ImageView mAppIntroImage;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_app_intro, container, false);
+
+        mAppIntroImage = (ImageView)rootView.findViewById(R.id.appIntroImage);
+        Animation transition = AnimationUtils.loadAnimation(getActivity(), R.anim.intro_transit);
+        mAppIntroImage.startAnimation(transition);
 
         return rootView;
     }

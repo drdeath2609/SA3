@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="8dp"
+    android:layout_margin="5dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:id="@+id/cardlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="15dp">
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:textSize="14dp" />
+        <TextView
+            android:layout_weight="3"
+            android:id="@+id/percentage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"/>
+        <ImageView android:src="@drawable/arrow"
+            android:id="@+id/arrow"
+            android:layout_weight="3"
+            tools:ignore="ContentDescription" />
+    </TableRow>>
+        <TableLayout
+            android:id="@+id/collapsibleTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+        </TableLayout>
+
+    </LinearLayout>
+
+
+
+</android.support.v7.widget.CardView>

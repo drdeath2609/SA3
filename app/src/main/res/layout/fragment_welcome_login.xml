@@ -3,10 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
     android:orientation="horizontal">
 
     <LinearLayout
@@ -24,15 +20,16 @@
            android:paddingLeft="32dp"
            android:paddingRight="32dp"
            android:layout_gravity="center"
-            app:fab_backgroundColor="#009688"
+            app:fab_backgroundColor="@color/offGrey"
             app:fab_radius="32dp"
             app:fab_elevation="3dp"
-            app:fab_iconSrc="@drawable/login"/>
+            app:fab_iconSrc="@drawable/iconlogin"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="24dp"
+            android:textColor="@color/offGrey"
             android:text="Login"/>
 
     </LinearLayout>
@@ -53,15 +50,16 @@
             android:paddingLeft="32dp"
             android:paddingRight="32dp"
             android:layout_gravity="center"
-            app:fab_backgroundColor="#009688"
+            app:fab_backgroundColor="@color/offGrey"
             app:fab_radius="32dp"
             app:fab_elevation="3dp"
-            app:fab_iconSrc="@drawable/register"/>
+            app:fab_iconSrc="@drawable/iconregister"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="24dp"
+            android:textColor="@color/offGrey"
             android:text="Register"/>
 
     </LinearLayout>

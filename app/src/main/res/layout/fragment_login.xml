@@ -16,23 +16,35 @@
         android:orientation="vertical"
         android:layout_weight="2">
 
-        <EditText
+        <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:hint="@string/username"
-            android:gravity="center"
-            android:id="@+id/roll"
-            android:inputType="textNoSuggestions"/>
+            android:layout_height="wrap_content" >
 
-        <EditText
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="@string/username"
+                android:gravity="center"
+                android:id="@+id/email"
+                android:inputType="textNoSuggestions"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/password"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:id="@+id/passWord"
-            android:inputType="textPassword"/>
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/password"
+                android:inputType="textPassword"/>
+
+        </android.support.design.widget.TextInputLayout>
 
         <com.rey.material.widget.Button
             android:id="@+id/submit"
