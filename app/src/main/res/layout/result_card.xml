@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.andexert.library.RippleView
+    android:id="@+id/rippleView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="8dp">
+
+        <RelativeLayout
+            android:id="@+id/cardHeader"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:scrollbarAlwaysDrawVerticalTrack="true">
+
+            <!-- Header -->
+            <LinearLayout
+                android:id="@+id/cardVisible"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/resultCardHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/SPI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="24dp"
+                    android:text="@string/spi"/>
+
+                <TextView
+                    android:id="@+id/PPI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="24dp"
+                    android:text="@string/ppi"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/resultExpandable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardVisible"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/resultSemester"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp">
+
+                    <TableRow>
+
+                        <TextView
+                            android:text="@string/sub_name"
+                            android:padding="15dp" />
+
+                        <TextView
+                            android:text="@string/sub_code"
+                            android:padding="15dp" />
+
+                        <TextView
+                            android:text="@string/sub_credit"
+                            android:padding="15dp" />
+
+                        <TextView
+                            android:text="@string/sub_grade"
+                            android:padding="15dp" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+</com.andexert.library.RippleView>

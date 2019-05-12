@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">SA3</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_login">Login</string>
+    <string name="title_register">Register</string>
+
+    <!--User-->
+    <string name="username">Roll Number</string>
+    <string name="password">Password</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+    <string name="title_activity_user">User</string>
+
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_attendance">Attendance</string>
+    <string name="title_timetable">Timetable</string>
+    <string name="title_result">Result</string>
+
+    <!--Navigation Drawer Starts-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="signout">Logout</string>
+    <!--Navigation Drawer Ends-->
+
+    <string name="title_activity_result">Result</string>
+    <string name="title_activity_attendance">Attendance</string>
+    <string name="title_activity_timetable">TimetableActivity</string>
+
+    <!--Result Starts-->
+
+    <string name="sub_name">Subject</string>
+    <string name="sub_code">Code</string>
+    <string name="sub_credit">Credits</string>
+    <string name="sub_grade">Grades</string>
+    <string name="sub_color">Legends</string>
+
+    <string name="spi">SPI : </string>
+    <string name="ppi">PPI : </string>
+
+    <!--Result Over-->
+
+    <!-- Strings related to login begins-->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+
+    <string name="shared_preference_key_login_status">Login</string>
+    <string name="shared_preference_key_roll_number">Roll Number</string>
+    <string name="title_activity_blank">BlankActivity</string>
+    <string name="login_loader">Validating you Account</string>
+    <string name="title_activity_profile">Profile</string>
+    <!-- Strings related to login ends -->
+
+    <string name="back">Back</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
