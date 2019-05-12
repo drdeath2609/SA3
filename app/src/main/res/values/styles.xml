@@ -3,59 +3,6 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-
-        <!-- colorPrimary is used for the default action bar background -->
-        <item name="colorPrimary">#4E342E</item>
-
-        <!-- colorPrimaryDark is used for the status bar -->
-        <item name="colorPrimaryDark">#A1887F</item>
-
-        <!-- colorAccent is used as the default value for colorControlActivated
-             which is used to tint widgets -->
-        <item name="colorAccent">#009688</item>
-
-        <!-- You can also set colorControlNormal, colorControlActivated
-             colorControlHighlight & colorSwitchThumbNormal. -->
-    </style>
-
-    <!-- Base application theme. -->
-    <style name="AppTheme1" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here. -->
-
-        <!-- colorPrimary is used for the default action bar background -->
-        <item name="colorPrimary">#4E342E</item>
-
-        <!-- colorPrimaryDark is used for the status bar -->
-        <item name="colorPrimaryDark">#A1887F</item>
-
-        <!-- colorAccent is used as the default value for colorControlActivated
-             which is used to tint widgets -->
-        <item name="colorAccent">#009688</item>
-
-        <!-- You can also set colorControlNormal, colorControlActivated
-             colorControlHighlight & colorSwitchThumbNormal. -->
-        <!-- Navigation Drawer Icon Animation -->
-        <item name="android:windowNoTitle">true</item>
-        <item name="windowActionBar">false</item>
-        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
-    </style>
-
-    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
-        <item name="spinBars">true</item>
-        <item name="color">@android:color/black</item>
-    </style>
-
-    <style name="FloatingActionButtonIcon" >
-        <item name="lmd_state">@xml/fab_icon_states</item>
-        <item name="lmd_curState">0</item>
-        <item name="lmd_padding">2dp</item>
-        <item name="lmd_animDuration">500</item>
-        <item name="lmd_interpolator">@android:anim/accelerate_decelerate_interpolator</item>
-        <item name="lmd_strokeSize">2dp</item>
-        <item name="lmd_strokeColor">#FFFFFFFF</item>
-        <item name="lmd_strokeCap">butt</item>
-        <item name="lmd_strokeJoin">miter</item>
-        <item name="lmd_clockwise">true</item>
     </style>
 
 </resources>
