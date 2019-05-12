@@ -1,16 +1,35 @@
 <resources>
     <string name="app_name">SA3</string>
-
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="menu">Menu</string>
 
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_user">User</string>
+
+    <!--User-->
+    <string name="username">#######@nirmauni.ac.in</string>
+    <string name="password">Password</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_attendance">Attendance</string>
+    <string name="title_timetable">Timetable</string>
+    <string name="title_result">Result</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+    <string name="title_activity_result">Result</string>
     <string name="title_activity_attendance">Attendance</string>
+    <string name="title_activity_timetable">TimetableActivity</string>
 
     <string name="title_section1">Section 1</string>
     <string name="title_section2">Section 2</string>
     <string name="title_section3">Section 3</string>
-    <string name="title_activity_qwertyuiop">qwertyuiop</string>
-    <string name="title_activity_profile">Profile</string>
 </resources>

@@ -31,7 +31,7 @@
 
     <!--Navigation Drawer Theme-->
 
-    <style name="MySubheaderTheme">
+    <!--<style name="MySubheaderTheme">
         <item name="subheaderTitleColor">#00F</item>
     </style>
 
@@ -50,5 +50,5 @@
         <item name="colorAccent">#FFFFFF</item>
         <item name="rippleBackport">true</item>
         <item name="singleAccount">true</item>
-    </style>
+    </style>-->
 </resources>

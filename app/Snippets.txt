@@ -1,0 +1,9 @@
+/*
+dependencies
+    compile 'com.afollestad:material-dialogs:0.7.6.0'
+
+repositories {
+    maven { url 'https://dl.bintray.com/drummer-aidan/maven' }
+}
+
+MaterialDialog mDialog = new MaterialDialog.Builder(myContext).content("Loading").progress(true, 0).show();*/
