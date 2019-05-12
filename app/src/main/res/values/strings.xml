@@ -3,40 +3,14 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_main">Dashboard</string>
-    <string name="title_activity_login">Login</string>
-
-    <string name="title_timetable">Schedule</string>
-    <string name="title_attendance">Attendance</string>
-    <string name="title_result">Results</string>
-    <string name="title_dashboard">Dashboard</string>
-
-    <string name="prompt_password">Password</string>
-    <string name="prompt_alias">Screen Alias</string>
-    <string name="prompt_email">########@nirmauni.ac.in</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="action_sign_in">Sign in</string>
-    <string name="action_sign_up">Register</string>
-
-    <string name="error_invalid_email">This email address is invalid</string>
-    <string name="error_invalid_password">This password is too short</string>
-    <string name="error_incorrect_password">This password is incorrect</string>
-    <string name="error_field_required">This field is required</string>
 
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_register">First Time User</string>
+    <string name="title_activity_attendance">Attendance</string>
 
-    <!--Result Starts-->
-
-    <string name="sub_name">Subject</string>
-    <string name="sub_code">Code</string>
-    <string name="sub_credit">Credits</string>
-    <string name="sub_grade">Grades</string>
-    <string name="sub_color">Legends</string>
-
-    <string name="spi">SPI : </string>
-    <string name="ppi">PPI : </string>
-
-    <!--Result Over-->
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_qwertyuiop">qwertyuiop</string>
+    <string name="title_activity_profile">Profile</string>
 </resources>

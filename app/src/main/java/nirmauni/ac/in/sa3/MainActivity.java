@@ -1,39 +1,63 @@
 package nirmauni.ac.in.sa3;
 
-import android.support.v7.app.ActionBarActivity;
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v7.internal.app.ToolbarActionBar;
+import android.support.v7.widget.Toolbar;
 
+import it.neokree.materialnavigationdrawer.MaterialNavigationDrawer;
+import it.neokree.materialnavigationdrawer.elements.MaterialAccount;
+import it.neokree.materialnavigationdrawer.elements.MaterialSection;
+import it.neokree.materialnavigationdrawer.elements.listeners.MaterialAccountListener;
 
-public class MainActivity extends ActionBarActivity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
-
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
+/**
+ * Created by Priyesh on 6/9/2015.
+ */
+public class MainActivity extends MaterialNavigationDrawer {
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+    public void init(Bundle savedInstanceState){
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+        //hbvdfhbviusbvkusfbv huihfuihfshdiufhbds shgfushgfushgfusjf
+        //Common to all Activity having Navigation Drawer
+        MaterialAccount account = new MaterialAccount(this.getResources(), "Dr. Death", "dr.death2609@gmail.com", R.drawable.lp_logo, R.drawable.lp);
+        this.addAccount(account);
 
-        return super.onOptionsItemSelected(item);
+        Dashboard dashboard = new Dashboard();
+        MaterialSection section = newSection("Dashboard", dashboard);
+        this.addSection(section);
+
+        this.addSubheader("Attendance");
+            Lectures lectures = new Lectures();
+            section = newSection("     Lecture", lectures);
+            this.addSection(section);
+
+            Practicals practicals = new Practicals();
+            section = newSection("     Practicals", practicals);
+            this.addSection(section);
+
+            Tutorials tutorials = new Tutorials();
+            section = newSection("     Tutorials", tutorials);
+            this.addSection(section);
+        this.addDivisor();
+        Timetable timetable = new Timetable();
+        section = newSection("Timetable", timetable);
+        this.addSection(section);
+        Result result = new Result();
+        section = newSection("Result", result);
+        this.addSection(section);
+
+        this.setAccountListener(new MaterialAccountListener() {
+            @Override
+            public void onAccountOpening(MaterialAccount materialAccount) {
+                Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
+                startActivity(intent);
+            }
+
+            @Override
+            public void onChangeAccount(MaterialAccount materialAccount) {
+
+            }
+        });
     }
 }

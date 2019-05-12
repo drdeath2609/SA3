@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Added by Priyesh from http://android-developers.blogspot.in/2014/10/appcompat-v21-material-design-for-pre.html-->
+    <!--Material Theme With Actionbar-->
+    <style name="Theme.MyTheme" parent="Theme.AppCompat.Light">
+        <!-- colorPrimary is used for the default action bar background -->
+        <item name="colorPrimary">#4E342E</item>
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">#A1887F</item>
+        <!-- colorAccent is used as the default value for colorControlActivated,
+             which is used to tint widgets -->
+        <item name="colorAccent">#009688</item>
+    </style>
+
+    <!-- You can also set colorControlNormal, colorControlActivated
+         colorControlHighlight, and colorSwitchThumbNormal. -->
+
+    <!--Material Theme without Actionbar-->
+    <style name="Theme.MyTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+            <!-- colorPrimary is used for the default action bar background -->
+            <item name="colorPrimary">#4E342E</item>
+            <!-- colorPrimaryDark is used for the status bar -->
+            <item name="colorPrimaryDark">#A1887F</item>
+            <!-- colorAccent is used as the default value for colorControlActivated,
+                 which is used to tint widgets -->
+            <item name="colorAccent">#009688</item>
+    </style>
+
+
+    <!-- Added by Priyesh from https://github.com/neokree/MaterialNavigationDrawer/wiki/Theming -->
+
+    <!--Navigation Drawer Theme-->
+
+    <style name="MySubheaderTheme">
+        <item name="subheaderTitleColor">#00F</item>
+    </style>
+
+    <style name="MySectionTheme" >
+        <item name="sectionColorIcon">#00F</item>
+        <item name="sectionColorText">#00F</item>
+        <item name="sectionColorNotification">#00F</item>
+        <item name="sectionBackgroundColorPressed">#160000FF</item>
+        <item name="sectionBackgroundColorSelected">#0A0000FF</item>
+        <item name="sectionBackgroundColor">#000000FF</item>
+    </style>
+
+    <style name="MyNavigationDrawerTheme" parent="MaterialNavigationDrawerTheme">
+        <item name="colorPrimary">#8bc34a</item>
+        <item name="colorPrimaryDark">#558b2f</item>
+        <item name="colorAccent">#FFFFFF</item>
+        <item name="rippleBackport">true</item>
+        <item name="singleAccount">true</item>
+    </style>
+</resources>
